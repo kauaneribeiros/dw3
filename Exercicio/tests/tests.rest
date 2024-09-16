@@ -1,0 +1,59 @@
+### teste de operação de soma
+POST http://localhost:40000/calculadora HTTP/1.1
+Content-Type: application/json
+
+{
+  "num1": 4,
+  "num2": 2,
+  "operacao": "+"
+}
+
+### teste de operação de subtração
+POST http://localhost:40000/calculadora HTTP/1.1
+Content-Type: application/json
+
+{
+  "num1": 4,
+  "num2": 2,
+  "operacao": "-"
+}
+
+### teste de operação de multiplicação
+POST http://localhost:40000/calculadora HTTP/1.1
+Content-Type: application/json
+
+{
+  "num1": 4,
+  "num2": 2,
+  "operacao": "*"
+}
+
+### teste de operação de divisão
+POST http://localhost:40000/calculadora HTTP/1.1
+Content-Type: application/json
+
+{
+  "num1": 4,
+  "num2": 2,
+  "operacao": "/"
+}
+
+### teste de operação de divisão por zero
+POST http://localhost:40000/calculadora HTTP/1.1
+Content-Type: application/json
+
+{
+  "num1": 4,
+  "num2": 0,
+  "operacao": "/"
+}
+
+### teste de operação não suportada
+POST http://localhost:40000/calculadora HTTP/1.1
+Content-Type: application/json
+
+{
+  "num1": 4,
+  "num2": 2,
+  "operacao": "%"
+}
